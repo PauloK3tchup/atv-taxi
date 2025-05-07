@@ -73,14 +73,14 @@ a.get-started:hover {
   header nav ul ul {
     display: none;
   }
+  header nav ul li {
+    margin: 10px 30px;
+    padding: 0;
+  }
 
   header nav ul li:hover ul {
     display: block;
     position: absolute;
-  }
-  header nav ul li {
-    margin: 10px 30px;
-    padding: 0;
   }
 
   header nav ul li a {
@@ -95,5 +95,83 @@ a.get-started:hover {
     margin: 0;
     padding: 15px 30px;
     border-radius: 8px;
+  }
+  .drop-item {
+    margin: 14px 0;
+  }
+
+  /* Banner */
+
+  section.banner {
+    background: url(../src/images/iPhone.png) no-repeat right,
+      url(../src/images/background-footer.webp),
+      linear-gradient(rgba(225, 244, 255, 0.5), rgba(225, 244, 255, 0.5));
+    padding: 10vw 15%;
+    background-size: auto 100%;
+  }
+
+  section.banner h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 140%;
+    width: 30%;
+    color: #252b42;
+  }
+
+  section.banner .text {
+    font-size: 0.8rem;
+    width: 30%;
+    color: grey;
+    margin: 30px 0;
+    line-height: 130%;
+  }
+
+  section.banner p button {
+    font-size: 0.8rem;
+    color: white;
+    background-color: #252b42;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 15px 0 0;
+    cursor: pointer;
+  }
+
+  section.banner p button:hover {
+    transition: 0.15s;
+    background-color: black;
+  }
+
+  section.banner p button span {
+    margin: 0 15px 0 0;
+  }
+
+  /* Ready */
+  section.ready {
+    text-align: center;
+    padding: 6vw 10vw;
+  }
+
+  section.ready h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  section.ready p.text {
+    display: block;
+    font-size: 0.8rem;
+    color: grey;
+    margin: 30px 0;
+    line-height: 130%;
+    width: 40%;
+  }
+  section.ready .centro {
+    display: flex;
+    justify-content: center;
+  }
+  section.ready div.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10vw;
   }
 }
