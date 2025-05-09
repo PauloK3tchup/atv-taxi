@@ -169,9 +169,165 @@ a.get-started:hover {
     display: flex;
     justify-content: center;
   }
+
   section.ready div.container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     padding: 50px 10vw;
+  }
+
+  section.ready div.itens ul {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 6%;
+  }
+
+  section.ready div.itens li {
+    text-align: left;
+    display: inline-block;
+    width: 40%;
+    margin: 30px;
+  }
+
+  section.ready div.itens span {
+    background-color: #e1f4ff;
+    padding: 8%;
+    border-radius: 8px;
+    color: #fbbc05;
+    font-size: 1.4rem;
+  }
+
+  section.ready div.itens p {
+    font-size: 0.8rem;
+    color: grey;
+    line-height: 130%;
+  }
+
+  section.ready div.itens h3 {
+    font-weight: bold;
+    margin: 30px 0;
+  }
+
+  /* Download */
+  section.download div.container {
+    border-radius: 24px;
+    margin: 5% 15%;
+    padding: 7%;
+    background: url(../src/images/iPhone-13-Sem-Sombra.png) no-repeat,
+      url(../src/images/iPhone-13-Sem-Sombra.png) no-repeat;
+    background-size: 15%;
+    background-position: 58% 245%, 90% -160%;
+
+    background-color: #fbbc05;
+  }
+
+  section.download button {
+    font-size: 0.8rem;
+    color: white;
+    background-color: #252b42;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 15px 0 0;
+    cursor: pointer;
+  }
+
+  section.download button:hover {
+    transition: 0.15s;
+    background-color: black;
+  }
+
+  section.download h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  section.download p.text {
+    display: block;
+    font-size: 0.8rem;
+    color: white;
+    margin: 30px 0;
+    line-height: 130%;
+    width: 40%;
+  }
+
+  /* Services */
+
+  section.services {
+    padding: 0 5%;
+    margin: 13% 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section.services div.know-lado {
+    width: 30%;
+  }
+
+  section.services div.know-lado h2 {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    max-width: 50%;
+  }
+
+  section.services div.know-lado p {
+    margin: 15px 0;
+    font-size: 0.8rem;
+  }
+
+  section.services div.servicos {
+    width: 60%;
+  }
+  section.services div.servicos ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section.services div.servicos ul div.icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section.services div.servicos ul li {
+    background-color: #f6f6f6;
+    width: 37%;
+    height: 100%;
+    padding: 5%;
+    margin: 0 30px 30px 0;
+  }
+
+  section.services div.servicos ul li:hover {
+    background-color: #fbbc05;
+    transition: 0.15s;
+    cursor: pointer;
+  }
+
+  section.services div.servicos ul span {
+    font-size: 2.5rem;
+    margin: 0 0 15px 0;
+  }
+
+  section.services div.servicos ul h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 30px 0;
+  }
+
+  section.services div.servicos ul p {
+    color: #39393b;
+    font-size: 0.8rem;
+    line-height: 150%;
+  }
+
+  .hidden {
+    opacity: 0%;
+    transform: scale(0.5);
+  }
+
+  li:hover .hidden {
+    opacity: 100%;
+    transition: 0.15s;
   }
 }
